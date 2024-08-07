@@ -5,8 +5,8 @@
 ---
 ## 규칙
 - 문제를 풀고 PR 날려라
-- 너의 PR에는 어떻게 풀었는지에 대한, 너의 코드에 대한 설명이 있어야한다
-- 너의 폴더명은 Quest/{ur name}/Solution.java 와 같은 형식으로 남겨라 </br>
+- PR에는 어떻게 풀었는지에 대한, 너의 코드에 대한 설명이 있어야한다
+- 폴더명은 Quest/{ur name}/Solution.java 와 같은 형식으로 남겨라 </br>
 	`ex) Q_001_hello/hoon/Solution.java`
 - 문제가 2개 이상이면 다음과 같은 구조로 나누어라 </br>
 	`ex) Q_001_hello/hoon/Solution1.java` </br>
