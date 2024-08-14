@@ -20,9 +20,9 @@ if [ $? -eq 0 ]; then
   SOLUTION1_OUTPUT=$(echo -e "472\n385" | java -cp "$CLASS_DIR" "$CLASS_NAME")
 
   if [ "$SOLUTION1_OUTPUT" == "$CASE1_SOLUTION" ]; then
-    echo "Solution1 . . . . . . . . [ pass ]"
+    echo -e "Solution1 . . . . . . . . [ \e[32mpass\e[0m ]"
   else 
-    echo "Solution1 . . . . . . . . [ fail ]"
+    echo -e "Solution1 . . . . . . . . [ \e[31mfail\e[0m ]"
     echo "실제 출력값:"
     echo "$SOLUTION1_OUTPUT"
     echo "기대값:"
