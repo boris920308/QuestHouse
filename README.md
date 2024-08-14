@@ -18,6 +18,7 @@
 	`ex) Q_001_hello/hoon/Solution1.java` </br>
  	`ex) Q_001_hello/hoon/Solution2.java` </br>
 - Solution.java 파일에 패키지를 남기지 마라 (최상단 `package hoon.~~`)
+- `Class` 이름은 파일명과 같게해라 
 - Solution commit 시 [solution]을 앞에 붙여라 </br>
   	`ex) [solution]`
 - 그리고 그 뒤에 문제를 붙여라 </br>
