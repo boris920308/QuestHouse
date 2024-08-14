@@ -1,7 +1,19 @@
 #!/bin/bash
 
+VALID_DIRS=("Q_001" "hoon")
+
 # 스크립트 실행시 몇번 Quest인지 입력받음
-read -p "몇번 Quest를 실행할거야? ex) Q_001 : " BASE_DIR
+while true; do
+  read -p "몇번 Quest를 실행할거야? ex) Q_001 : " BASE_DIR
+  
+  #유효성 확인 
+  if [[ " ${VALID_DIRS[@]} " =~ " ${BASE_DIR} " ]]; then
+    break
+  else
+    echo "그건 유효하지 않은 Quest인디 ?? "
+  fi
+done
+
 
 # config
 source sh/./${BASE_DIR}_config.sh
