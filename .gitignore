@@ -1,6 +1,10 @@
 # Created by https://www.toptal.com/developers/gitignore/api/intellij,java,kotlin,python,eclipse,visualstudio,visualstudiocode
 # Edit at https://www.toptal.com/developers/gitignore?templates=intellij,java,kotlin,python,eclipse,visualstudio,visualstudiocode
 
+# intellij
+.idea/
+*.iml
+
 ### Eclipse ###
 .metadata
 bin/
