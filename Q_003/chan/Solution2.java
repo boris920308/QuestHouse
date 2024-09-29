@@ -3,12 +3,20 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Arrays;
 
+/**
+ * [BOJ] no.2110
+ * https://www.acmicpc.net/problem/2110
+ */
+
 public class Solution2 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
         String[] input1 = br.readLine().split(" ");
 
+        /*
+         * 입력
+         * */
         int N = Integer.parseInt(input1[0]);    // 집 개수
         int C = Integer.parseInt(input1[1]);    // 공유기 개수
         int[] house = new int[N];               // 집 위치
@@ -18,10 +26,16 @@ public class Solution2 {
         }
         Arrays.sort(house);
 
+        /*
+         * 변수
+         * */
         int min = 1;                           // 공유기 최소 간격
         int max = house[N - 1] - house[0];     // 공유기 최대 간격
         int answer = 0;                        // 정답
 
+        /*
+         * 이진 탐색
+         * */
         while (min <= max) {
             int mid = (min + max) / 2;
 
