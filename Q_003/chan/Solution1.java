@@ -48,7 +48,7 @@ public class Solution1 {
             // 탐색
             if (totalWood >= M) {
                 min = mid + 1;
-                if (mid >= height) height = mid;
+                height = mid;
             } else {
                 max = mid - 1;
             }
